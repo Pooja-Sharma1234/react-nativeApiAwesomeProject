@@ -46,7 +46,7 @@ const RegisterAxios = () => {
       ...userRegistration,
       [fieldId]: value,
     });
-  }; //net slow h kya? r u there?m ek sec ab check kro nhi hua?
+  };
   return (
     <View>
       <Text style={Styles.btn}>Sign Up</Text>
@@ -85,7 +85,7 @@ const RegisterAxios = () => {
     </View>
   );
 };
-//ha toh mtlb jb register kiya to vhi data store hojayega phir bar bar login ya
+
 export default RegisterAxios;
 
 const Styles = StyleSheet.create({

@@ -19,7 +19,6 @@ export const ProfileScreen = () => {
     return () => unsubscribe();
   }, [navigation]);
 
-  
   const logouthandler = () => {
     dispatch(AuthRepo.logout());
   };
@@ -141,11 +140,3 @@ export const ProfileScreen = () => {
     </View>
   );
 };
-//chaliye tj sojaiye klkarenge bacha hua aapka interview ka kya rha ab ok ok m wtsp p krti hu msg
-//nhi mtlb vo to login register to kiya h or y mne profile k liye bnaya but ha isi m h
-//alg nhi h acha mne login to kiya but ab phirse register ya login page p jana ho to kse jaye
-//mne navugation lgaya use ni hua
-
-//apko logina and register screen and functionality pr kaam karene
-//nahi nahi abhi rukiye backen main abhi bacha hain jisse issue ayga kuch din baad karenge daddieskart pr
-//abhi hum

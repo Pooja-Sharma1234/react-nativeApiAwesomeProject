@@ -36,5 +36,3 @@ const ProductScreen = () => {
   );
 };
 export default ProductScreen;
-//hello hello tj hn aa ab kya hua kuch nahi tj kon sa question tha run wala
-//unhone tb toh link bhja tha ab nhi h ok koi na apne screen shot bhaje hain usse krte hain

@@ -50,7 +50,7 @@ const UploadFiles = () => {
       console.error('Error:', error);
     }
   };
-  //chliye yearror bad main dekte hian abhi soten hain tj kl dophar main dekhenge ok ok krdu bnd?haan tj ok bye bye
+
   return (
     <View style={{flex: 1}}>
       {avatarSource && (
@@ -74,6 +74,3 @@ const UploadFiles = () => {
 };
 
 export default UploadFiles;
-//aagye yes tj ku kisne bulaya aapko kisne permission di hmare laptop m ghusne ki main apse baat nahi krne aya hun main hamare tj se baat karni hain
-//aap bhul rhe h aap yha kam krne aaye ho ok tj
-//isme uri bhi deni pdti h?

@@ -9,7 +9,6 @@ import {
   View,
 } from 'react-native';
 
-
 //********************pagination ********************************** */
 const NewScreen = () => {
   const [data, setData] = useState({
@@ -21,9 +20,7 @@ const NewScreen = () => {
   useEffect(() => {
     fetchdata(page);
   }, [page]);
-  //kha se kuki jse page chng ho rha h to vse data bhi to chng ho rha h na jb state chng hogi
-  // vse function
- //ok
+
   const fetchdata = async p => {
     try {
       const response = await fetch(
@@ -42,10 +39,7 @@ const NewScreen = () => {
       console.log(data, 'data');
       setData(prevData => ({
         ...prevData,
-        ...data,//yeah add kiya bas teacher ji isse kya hua  prev data to thik h but data jo agyatime 
-        //hogya tha? kitna complicated h y or interview m to timeconsuming ho jata hoga na ok
-        //ese bhi puch lete h ki code kse lik hmm.....but bhot kuch h na koi kuch bhi puch skta h 
-        //
+        ...data,
         product: [...prevData.product, ...data?.product],
       }));
     } catch (error) {
@@ -58,24 +52,14 @@ const NewScreen = () => {
       <Text>{item.title}</Text>
     </View>
   );
-  //bd m kr dungi 
- 
-  // total data=30  jse css m hum class or id dete the acha
-  //page1=10,page2=10,page3=10 ,total 30 data
-  //api call kari toh hamare pass 10 data aya phele page main phir nich jate hi pag2 call hojaye fir niche jate hi page 3 call ho jayega na tj
-  //aysa hona tha
-  //ho gaya tj 
-  //correction btao
 
-  //are tj yeah kes hua hian ap toh page bhaj hi nahi rahin hain
-  //sahi a raha hain na ab
-  //kaam nahi kr rahain kya tj y to normally bhi ese hi show krta h pagination ka kya role hua
-  //hasNextacess kr pa rahe hain phir smj ni aaya y kse kam kr rha h pura flow btao na
-  //phele bataiye kya khayin aj ap mne dal badhiya call karun ?khana ku pucha mujhe smj ni aaya isliye ki kya kha liya ki smj ni aa rha ese
-  //ok samjha raha hun tj call karun tjo kya o k mujhe lagana hain kya ok hlo ha
+  // total data=30
+  //page1=10,page2=10,page3=10 ,total 30 data
+  //api call kari toh hamare pass 10 data aya phele page main phir nich jate hi pag2 call hojaye fir niche jate hi page 3 call ho jayega
+
   const handleLoadMore = () => {
     if (!data?.hasNextPage) return;
-    setPage(p => p + 1); // Increment page number // Fetch data for the next page ha 
+    setPage(p => p + 1); // Increment page number // Fetch data for the next page
   };
 
   const renderFooter = () => {
@@ -102,8 +86,6 @@ const NewScreen = () => {
     </>
   );
 };
-//sahi hua kya tj
-//itna hi data h ok tj
 
 //********************************************************************** */
 // const reducer = (state = initialState, action) => {

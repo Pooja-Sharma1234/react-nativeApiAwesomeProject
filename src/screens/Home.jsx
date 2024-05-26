@@ -18,13 +18,12 @@ export const HomeScreen = () => {
   // useEffect(() => {
   //   dispatch(AuthRepo.logout());
   // }, []);
-  //iski wajaha se horaha th tj logout ho ja raha tha ab hogya?
-  //haan ab ap age kariye jo kr rahin thin m  kuch y uuser vala profile p jana chahiye
-  const navigateList = [
-    {
-      routerName: 'PROFILE',
-    },
-  ];
+
+  // const navigateList = [
+  //   {
+  //     routerName: 'PROFILE',
+  //   },
+  // ];
 
   return (
     <View style={{flex: 1}}>
